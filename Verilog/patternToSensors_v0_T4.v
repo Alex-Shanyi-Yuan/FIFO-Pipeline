@@ -102,7 +102,7 @@ module patternToSensors_v0(
 	always @(posedge stream_clk) begin
 		stream_en_o <= stream_en_i;
 	end 
-
+    /*
 	genvar k;
 	generate for ( k = 0; k < 20; k = k+1) begin
 	
@@ -126,6 +126,6 @@ module patternToSensors_v0(
 		);
 	end
 	endgenerate
-	
+	*/
 	
 endmodule
