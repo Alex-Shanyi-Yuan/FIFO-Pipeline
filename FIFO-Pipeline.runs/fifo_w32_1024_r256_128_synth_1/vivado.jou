@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Jun 21 11:26:58 2023
+# Process ID: 13552
+# Current directory: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.runs/fifo_w32_1024_r256_128_synth_1
+# Command line: vivado.exe -log fifo_w32_1024_r256_128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_w32_1024_r256_128.tcl
+# Log file: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.runs/fifo_w32_1024_r256_128_synth_1/fifo_w32_1024_r256_128.vds
+# Journal file: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.runs/fifo_w32_1024_r256_128_synth_1\vivado.jou
+# Running On: AlexYuan, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17034 MB
+#-----------------------------------------------------------
+source fifo_w32_1024_r256_128.tcl -notrace
