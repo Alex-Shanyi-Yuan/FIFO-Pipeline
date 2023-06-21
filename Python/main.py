@@ -27,6 +27,11 @@ if __name__ == '__main__':
     # wait
     time.sleep(0.5)
 
+    # set wire on
+    # wait
+    # set wire off
+    
+
     # get output
     c = bytearray(16)
     dev.read(0xA0, c)

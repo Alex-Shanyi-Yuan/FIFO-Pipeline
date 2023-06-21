@@ -50,6 +50,25 @@ module Top
     okBTPipeIn		pi80 (.okHE(okHE), .okEH(okEHx[ 0*65 +: 65 ]), .ep_addr(8'h80), .ep_write(pi0_ep_write), .ep_blockstrobe(), .ep_dataout(pi0_ep_dataout), .ep_ready(pipe_in_ready)); // input
     okBTPipeOut		poa0 (.okHE(okHE), .okEH(okEHx[ 1*65 +: 65 ]), .ep_addr(8'ha0), .ep_read(po0_ep_read),   .ep_blockstrobe(), .ep_datain(po0_ep_datain),   .ep_ready(pipe_out_ready)); // output
 
+    //Block Throttle
+    always @(posedge okClk) begin
+        // Check for enough space in input FIFO to pipe in another block
+        if(pipe_in_wr_count <= (1024-128) ) begin
+            pipe_in_ready <= 1'b1;
+        end
+        else begin
+            pipe_in_ready <= 1'b0;
+        end
+
+        // Check for enough space in output FIFO to pipe out another block
+        if(pipe_out_rd_count >= 128) begin
+            pipe_out_ready <= 1'b1;
+        end
+        else begin
+            pipe_out_ready <= 1'b0;
+        end
+    end
+
     fifo_w32_1024_r256_128 okPipeIn_fifo (
 	.rst(ep00wire[2]),
 	.wr_clk(okClk),
@@ -64,7 +83,7 @@ module Top
 	.rd_data_count(pipe_in_rd_count), // Bus [6 : 0]
 	.wr_data_count(pipe_in_wr_count)); // Bus [9 : 0]
 
-    fifo_w256_128_r32_1024 okPipeOut_fifo (
+    fifo_w64_128_r32_256 okPipeOut_fifo (
 	.rst(ep00wire[2]),
 	.wr_clk(clk),
 	.rd_clk(okClk),
