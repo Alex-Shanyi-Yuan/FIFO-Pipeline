@@ -1,0 +1,31 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot okHost_behav xil_defaultlib.okHost xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:1754]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:1757]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:3127]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:4030]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'DI' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:4032]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:4151]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'S' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:4152]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5145]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DI' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5147]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5148]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'S' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5149]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5503]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'DI' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5505]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5506]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'S' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:5507]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:6949]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:6952]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:7057]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:8182]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:8185]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'CO' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:11593]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'O' [D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:11596]
+Completed static elaboration
+Starting simulation data flow analysis
+ERROR: [XSIM 43-3253] File D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v, line 14894. Verilog alias ports are not supported in mixed language simulation.

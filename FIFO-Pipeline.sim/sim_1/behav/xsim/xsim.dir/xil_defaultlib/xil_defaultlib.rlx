@@ -1,0 +1,7 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/ISML/0621_FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v,1687368226,verilog,,,,fifo_generator_v13_2_0;okCore;okCoreHarness;ok_tfifo;xpm_cdc_async_rst,,,,,,,,
+D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okLibrary.vhd,1687368226,vhdl,,,,frontpanel;okhost;okwireor,,,,,,,,

@@ -28,8 +28,11 @@ if __name__ == '__main__':
     time.sleep(0.5)
 
     # set wire on
+    dev.wire_in(0x01, 1)
     # wait
+    time.sleep(0.1)
     # set wire off
+    dev.wire_in(0x01, 0)
 
 
     # get output

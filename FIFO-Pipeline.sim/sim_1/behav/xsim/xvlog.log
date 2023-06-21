@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module okCore
+INFO: [VRFC 10-311] analyzing module okCoreHarness
+INFO: [VRFC 10-311] analyzing module ok_tfifo
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ISML/0621_FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
