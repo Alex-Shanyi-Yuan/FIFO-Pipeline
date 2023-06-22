@@ -2,66 +2,13 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Jun 22 10:19:44 2023
-# Process ID: 29272
-# Current directory: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23852 C:\Users\alexy\Documents\ISML_Research_Summer_2023\FIFO-Pipeline\FIFO-Pipeline.xpr
-# Log file: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/vivado.log
-# Journal file: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline\vivado.jou
-# Running On: AlexYuan, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17034 MB
+# Start of session at: Thu Jun 22 13:45:33 2023
+# Process ID: 20532
+# Current directory: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37344 C:\Users\benlu\Desktop\ISML\FIFO-Pipeline\FIFO-Pipeline.xpr
+# Log file: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/vivado.log
+# Journal file: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline\vivado.jou
+# Running On: DESKTOP-JN6611I, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8376 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.xpr
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-launch_simulation
-source tb.tcl
-close_sim
-launch_simulation
-source tb.tcl
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-set_property -name {xsim.simulate.runtime} -value {100000ns} -objects [get_filesets sim_1]
-relaunch_sim
-close_sim
-launch_simulation
-source tb.tcl
-relaunch_sim
-relaunch_sim
-relaunch_sim
-save_wave_config {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg
-set_property xsim.view C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg [get_filesets sim_1]
-set_property -name {xsim.simulate.runtime} -value {1000000ns} -objects [get_filesets sim_1]
-close_sim
-launch_simulation
-open_wave_config C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg
-source tb.tcl
-relaunch_sim
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-relaunch_sim
-relaunch_sim
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-close_sim
+open_project C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.xpr

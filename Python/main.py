@@ -1,5 +1,6 @@
 from fpga import api
 import time
+import numpy as np
 
 class quickMafths(api): 
     def __init__(self, bitfile):
@@ -9,7 +10,7 @@ class quickMafths(api):
 
 if __name__ == '__main__':
 
-    dev = quickMafths('test.bit')
+    dev = quickMafths('Top622.bit')
 
     # reset
     dev.wire_in(0x00, 1)
@@ -40,6 +41,14 @@ if __name__ == '__main__':
 
 
     # get output
-    c = bytearray(16)
+    c = bytearray(8 * (256-24))
     dev.read(0xA0, c)
+    print("length: ", len(c))
     print("output: ", c)
+
+    print("\n\n")
+
+
+
+
+

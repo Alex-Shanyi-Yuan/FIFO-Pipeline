@@ -26,21 +26,110 @@ module tb();
 
         #100
         reset = 0; // need to give 340ns after reset
-
-        #300
+        
+        #500
+        
+        #20
         data_in = 32'h000fffff;
         wr_in_en = 1;
 
-        #300
+        #20
         data_in = 32'h000eeeee;
         
-        #300
+        #20
         data_in = 32'h000ddddd;
         rd_mid_en = 1;
 
-        #300
+        #20
         data_in = 32'h000ccccc;
+        
+        #20
+        data_in = 32'h000bbbbb;
 
+        #20
+        data_in = 32'h000aaaaa;
+        
+        #20
+        data_in = 32'h00099999;
+
+        #20
+        data_in = 32'h00088888;
+        
+        #20
+        data_in = 32'h00077777;
+
+        #20
+        data_in = 32'h00066666;
+        
+        #20
+        data_in = 32'h00055555;
+
+        #20
+        data_in = 32'h00044444;
+        
+        #20
+        data_in = 32'h00033333;
+
+        #20
+        data_in = 32'h00022222;
+        
+        #20
+        data_in = 32'h00011111;
+
+        #20
+        data_in = 32'h00000000;
+        
+        #20
+        data_in = 32'h00011111;
+        
+        #20
+        data_in = 32'h00022222;
+        
+        #20
+        data_in = 32'h00033333;
+        
+        #20
+        data_in = 32'h00044444;
+        
+        #20
+        data_in = 32'h00055555;
+        
+        #20
+        data_in = 32'h00066666;
+        
+        #20
+        data_in = 32'h00077777;
+        
+        #20
+        data_in = 32'h00088888;
+        
+        #20
+        data_in = 32'h00099999;
+        
+        #20
+        data_in = 32'h000aaaaa;
+        
+        #20
+        data_in = 32'h000bbbbb;
+        
+        #20
+        data_in = 32'h000ccccc;
+        
+        #20
+        data_in = 32'h000ddddd;
+        
+        #20
+        data_in = 32'h000eeeee;
+        
+        #20
+        data_in = 32'h000fffff;
+        
+        #20
+        data_in = 32'h000eeeee;
+                
+        #20
+        wr_in_en = 0;
+        
         #300
         rd_out_en = 1;
         
