@@ -2,6 +2,10 @@
 2020.2
 Apr 18 2022
 16:05:34
-D:/ISML/0621_FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
-D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okCoreHarness.v,1687368226,verilog,,,,fifo_generator_v13_2_0;okCore;okCoreHarness;ok_tfifo;xpm_cdc_async_rst,,,,,,,,
-D:/ISML/0621_FIFO-Pipeline/XEM7310-A75/okLibrary.vhd,1687368226,vhdl,,,,frontpanel;okhost;okwireor,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v,1687361403,verilog,,C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v,,fifo_w256_1024_r64_4096_ib,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v,1687361213,verilog,,C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v,,fifo_w32_1024_r256_128,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v,1687362938,verilog,,C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v,,fifo_w64_128_r32_256,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/glbl.v,1687400088,verilog,,,,glbl,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v,1687445899,verilog,,C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v,,load_pattern_v0,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v,1687361003,verilog,,C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v,,patternToSensors_v0,,,,,,,,
+C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v,1687446537,verilog,,,,tb,,,,,,,,

@@ -96,7 +96,7 @@ module load_pattern_v0(
 				S_RESET_ALL1: begin
 					
 					//if(cntPat < num_streams && ~(FIFO_full)) begin
-					if(cntPat < 100) begin // add some delay
+					if(cntPat < 5) begin // add some delay
 						//FIFO_wr <= 1;
 						FIFO_wr <= 0;
 						Pat_i <= 32'hffffffff;

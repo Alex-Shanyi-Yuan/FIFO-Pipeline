@@ -1,6 +1,4 @@
 # compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../XEM7310-A75/okLibrary.vhd" \
 
 # Do not sort compile order
 nosort

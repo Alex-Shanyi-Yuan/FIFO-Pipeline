@@ -19,7 +19,7 @@ if __name__ == '__main__':
     dev.wire_in(0x00, 0)
 
     # prep input
-    a = list(range(48))
+    a = list(range(32))
     b = bytearray(a)
     print("In: ", b)
     dev.write(0x80, b)
