@@ -26,3 +26,5 @@ open_wave_config C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipelin
 source tb.tcl
 relaunch_sim
 relaunch_sim
+save_wave_config {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg}
+close_sim

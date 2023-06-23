@@ -516,3 +516,8 @@ WARNING: Behavioral models for independent clock FIFO configurations do not mode
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
 $finish called at time : 11560 ns : File "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" Line 137
 relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1567.199 ; gain = 0.000
+save_wave_config {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 23 11:11:51 2023...

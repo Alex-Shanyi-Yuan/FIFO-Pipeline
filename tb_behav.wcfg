@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,600.001 ns"></ZoomEndTime>
-      <Cursor1Time time="2,600.000 ns"></Cursor1Time>
+      <ZoomStartTime time="620.847 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,643.934 ns"></ZoomEndTime>
+      <Cursor1Time time="910.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="147"></NameColumnWidth>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="24" />
+   <WVObjectSize size="27" />
    <wvobject fp_name="/tb/okClk" type="logic">
       <obj_property name="ElementShortName">okClk</obj_property>
       <obj_property name="ObjectShortName">okClk</obj_property>
@@ -47,6 +47,18 @@
    <wvobject fp_name="/tb/wr_in_en" type="logic">
       <obj_property name="ElementShortName">wr_in_en</obj_property>
       <obj_property name="ObjectShortName">wr_in_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_patternToSensors/controlLoading/FIFO_full" type="logic">
+      <obj_property name="ElementShortName">FIFO_full</obj_property>
+      <obj_property name="ObjectShortName">FIFO_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_patternToSensors/controlLoading/camfifo_valid" type="logic">
+      <obj_property name="ElementShortName">camfifo_valid</obj_property>
+      <obj_property name="ObjectShortName">camfifo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_patternToSensors/controlLoading/cntPat" type="array">
+      <obj_property name="ElementShortName">cntPat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cntPat[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/cache_rd_en" type="logic">
       <obj_property name="ElementShortName">cache_rd_en</obj_property>
