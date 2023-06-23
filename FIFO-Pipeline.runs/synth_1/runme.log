@@ -10,18 +10,6 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source Top.tcl -notrace
-
-*** Running vivado
-    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
-
-
-
-****** Vivado v2022.1 (64-bit)
-  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
-  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-source Top.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -34,13 +22,13 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9180
+INFO: [Synth 8-7075] Helper process launched with PID 22544
 CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'xpm_cdc_async_rst' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okCoreHarness.v:15399]
 INFO: [Synth 8-9937] previous definition of design element 'xpm_cdc_async_rst' is here [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1258]
 WARNING: [Synth 8-6901] identifier 'pipe_in_wr_count' is used before its declaration [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:44]
 WARNING: [Synth 8-6901] identifier 'pipe_out_rd_count' is used before its declaration [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:52]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1285.406 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1283.242 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'okHost' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okLibrary.v:10]
@@ -287,45 +275,11 @@ WARNING: [Synth 8-689] width (10) of port connection 'rd_data_count' does not ma
 WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_w64_128_r32_256' is unconnected for instance 'okPipeOut_fifo' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:108]
 WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_w64_128_r32_256' is unconnected for instance 'okPipeOut_fifo' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:108]
 WARNING: [Synth 8-7023] instance 'okPipeOut_fifo' of module 'fifo_w64_128_r32_256' has 14 connections declared, but only 12 given [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:108]
-WARNING: [Synth 8-6014] Unused sequential element cntMask_reg was removed.  [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v:80]
 WARNING: [Synth 8-6014] Unused sequential element pat_fifo_rd_en_reg was removed.  [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v:81]
 WARNING: [Synth 8-3848] Net MSTREAMOUT in module/entity patternToSensors_v0 does not have driver. [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v:37]
 WARNING: [Synth 8-3848] Net led in module/entity Top does not have driver. [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v:12]
-WARNING: [Synth 8-7129] Port Num_Pat[31] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[30] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[29] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[28] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[27] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[26] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[25] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[24] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[23] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[22] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[21] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[20] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[19] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[18] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[17] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[16] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[15] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[14] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[13] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[12] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[11] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[10] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[9] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[8] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[7] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[6] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[5] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[4] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[3] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[2] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[1] in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Num_Pat[0] in module load_pattern_v0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FIFO_empty in module load_pattern_v0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port camfifo_empty in module load_pattern_v0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port camfifo_valid in module load_pattern_v0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port MSTREAMOUT[20] in module patternToSensors_v0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port MSTREAMOUT[19] in module patternToSensors_v0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port MSTREAMOUT[18] in module patternToSensors_v0 is either unconnected or has no load
@@ -391,20 +345,53 @@ WARNING: [Synth 8-7129] Port okHE[71] in module okBTPipeOut is either unconnecte
 WARNING: [Synth 8-7129] Port okHE[70] in module okBTPipeOut is either unconnected or has no load
 WARNING: [Synth 8-7129] Port okHE[69] in module okBTPipeOut is either unconnected or has no load
 WARNING: [Synth 8-7129] Port okHE[68] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[67] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[66] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[65] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[64] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[63] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[62] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[61] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[60] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[59] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[58] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[57] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[56] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[55] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[54] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[53] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[52] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[51] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[50] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[49] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[48] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[47] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[45] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[44] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[43] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[41] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[40] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[31] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[30] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[29] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[28] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[27] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[26] in module okBTPipeOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[25] in module okBTPipeOut is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.582 ; gain = 2.176
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1287.754 ; gain = 4.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.582 ; gain = 2.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1287.754 ; gain = 4.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.582 ; gain = 2.176
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1287.754 ; gain = 4.512
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1287.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1287.754 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -428,7 +415,7 @@ INFO: [Timing 38-2] Deriving generated clocks
 INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1374.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1372.855 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 97 instances were transformed.
   IBUFG => IBUF: 1 instance 
@@ -438,21 +425,21 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1374.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1372.855 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'okPipeIn_fifo' at clock pin 'rd_clk' is different from the actual clock period '9.920', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'okPipeOut_fifo' at clock pin 'rd_clk' is different from the actual clock period '9.920', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_patternToSensors/fifo_pattern_to_sensors' at clock pin 'rd_clk' is different from the actual clock period '9.920', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a75tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -462,19 +449,20 @@ Applied set_property KEEP_HIERARCHY = SOFT for u_patternToSensors/fifo_pattern_t
 Applied set_property KEEP_HIERARCHY = SOFT for okPipeOut_fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for okHI/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'load_pattern_v0'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  S_init |                              001 | 00000000000000000000000000000001
-            S_RESET_ALL1 |                              010 | 00000000000000000000000000000101
-             S_subc_pats |                              100 | 00000000000000000000000000000011
+                  S_init |                               00 | 00000000000000000000000000000001
+            S_RESET_ALL1 |                               01 | 00000000000000000000000000000101
+             S_subc_pats |                               10 | 00000000000000000000000000000011
+             S_subc_last |                               11 | 00000000000000000000000000000100
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'load_pattern_v0'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'load_pattern_v0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -597,7 +585,7 @@ WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and wi
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -605,19 +593,19 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'okHI/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -635,37 +623,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -688,14 +676,14 @@ Report Cell Usage:
 |2     |fifo_w32_1024_r256         |     1|
 |3     |fifo_w64_128_r32           |     1|
 |4     |BUFG                       |     2|
-|5     |CARRY4                     |    58|
+|5     |CARRY4                     |    70|
 |6     |DNA_PORT                   |     1|
 |7     |LUT1                       |    58|
-|8     |LUT2                       |   296|
-|9     |LUT3                       |    97|
-|10    |LUT4                       |   210|
-|11    |LUT5                       |   103|
-|12    |LUT6                       |   450|
+|8     |LUT2                       |   327|
+|9     |LUT3                       |   132|
+|10    |LUT4                       |   183|
+|11    |LUT5                       |   135|
+|12    |LUT6                       |   452|
 |14    |MMCME2_BASE                |     1|
 |15    |RAM128X1S                  |     8|
 |16    |RAM32M                     |     4|
@@ -703,7 +691,7 @@ Report Cell Usage:
 |19    |RAMB36E1                   |     1|
 |20    |FDCE                       |   159|
 |21    |FDPE                       |    37|
-|22    |FDRE                       |   897|
+|22    |FDRE                       |   930|
 |23    |FDSE                       |    22|
 |24    |IBUF                       |     4|
 |25    |IBUFG                      |     1|
@@ -712,19 +700,19 @@ Report Cell Usage:
 |28    |OBUFT                      |     8|
 +------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1372.855 ; gain = 89.613
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 832 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:46 . Memory (MB): peak = 1374.215 ; gain = 2.176
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1374.215 ; gain = 88.809
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 1372.855 ; gain = 4.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1372.855 ; gain = 89.613
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1374.215 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1372.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 170 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1374.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1372.855 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 97 instances were transformed.
   IBUFG => IBUF: 1 instance 
@@ -734,12 +722,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
 
-Synth Design complete, checksum: d6f56592
+Synth Design complete, checksum: 5c988852
 INFO: [Common 17-83] Releasing license: Synthesis
-234 Infos, 247 Warnings, 1 Critical Warnings and 0 Errors encountered.
+234 Infos, 246 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1374.215 ; gain = 88.809
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1372.855 ; gain = 89.613
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 22 17:12:26 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 23 12:40:36 2023...

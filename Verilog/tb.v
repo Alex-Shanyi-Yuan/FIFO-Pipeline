@@ -17,6 +17,7 @@ module tb();
 
     wire write_enable;
     wire [63:0] patt_out;
+    wire cache_valid;
 
     reg pipe_in_ready, pipe_out_ready;
 

@@ -32,16 +32,17 @@ if __name__ == '__main__':
     # wait
     time.sleep(0.5)
 
+    
     # set wire on
     dev.wire_in(0x01, 1)
     # wait
     time.sleep(0.1)
     # set wire off
     dev.wire_in(0x01, 0)
-
+    
 
     # get output
-    c = bytearray(8 * (256-24))
+    c = bytearray(256* 7)
     dev.read(0xA0, c)
     print("length: ", len(c))
     print("output: ", c)

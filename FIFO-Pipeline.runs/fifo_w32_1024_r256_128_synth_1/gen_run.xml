@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="fifo_w32_1024_r256_128_synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1687361214">
+<GenRun Id="fifo_w32_1024_r256_128_synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1687536573">
   <File Type="PA-TCL" Name="fifo_w32_1024_r256_128.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="fifo_w32_1024_r256_128_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fifo_w32_1024_r256_128_reports.tcl"/>
   <File Type="RDS-RDS" Name="fifo_w32_1024_r256_128.vds"/>
   <File Type="RDS-UTIL" Name="fifo_w32_1024_r256_128_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="fifo_w32_1024_r256_128_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="fifo_w32_1024_r256_128.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fifo_w32_1024_r256_128_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fifo_w32_1024_r256_128_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_w32_1024_r256_128">
     <File Path="$PSRCDIR/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xci">
       <FileInfo>
@@ -34,6 +37,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

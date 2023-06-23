@@ -2,21 +2,17 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Jun 23 10:14:23 2023
-# Process ID: 21768
-# Current directory: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1968 C:\Users\alexy\Documents\ISML_Research_Summer_2023\FIFO-Pipeline\FIFO-Pipeline.xpr
-# Log file: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/vivado.log
-# Journal file: C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline\vivado.jou
-# Running On: AlexYuan, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17034 MB
+# Start of session at: Fri Jun 23 11:32:02 2023
+# Process ID: 20496
+# Current directory: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21936 C:\Users\benlu\Desktop\ISML\FIFO-Pipeline\FIFO-Pipeline.xpr
+# Log file: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/vivado.log
+# Journal file: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline\vivado.jou
+# Running On: DESKTOP-JN6611I, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8376 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline' since last save.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+open_project C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline' since last save.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -56,45 +52,54 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1567.199 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.570 ; gain = 0.000
 update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 4
+[Fri Jun 23 11:34:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/runme.log
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module load_pattern_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module patternToSensors_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
 "xvhdl --incr --relax -prj tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator v2022.1
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
@@ -102,7 +107,7 @@ Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v:184]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:184]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -129,15 +134,458 @@ Compiling module xil_defaultlib.fifo_w64_128_r32_256
 Compiling module xil_defaultlib.tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1567.199 ; gain = 0.000
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1235.570 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$finish called at time : 11560 ns : File "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" Line 137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.570 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:184]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$finish called at time : 11560 ns : File "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" Line 137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1235.570 ; gain = 0.000
+set_property -dict [list CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Full_Threshold_Assert_Value {1023} CONFIG.Full_Threshold_Negate_Value {1022} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_ips fifo_w32_1024_r256_128]
+generate_target all [get_files  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_w32_1024_r256_128'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_w32_1024_r256_128'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_w32_1024_r256_128'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_w32_1024_r256_128'...
+catch { config_ip_cache -export [get_ips -all fifo_w32_1024_r256_128] }
+export_ip_user_files -of_objects [get_files C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xci] -no_script -sync -force -quiet
+reset_run fifo_w32_1024_r256_128_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/fifo_w32_1024_r256_128_synth_1
+
+launch_runs fifo_w32_1024_r256_128_synth_1 -jobs 4
+[Fri Jun 23 12:09:33 2023] Launched fifo_w32_1024_r256_128_synth_1...
+Run output will be captured here: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/fifo_w32_1024_r256_128_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xci] -directory C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.ip_user_files -ipstatic_source_dir C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.cache/compile_simlib/modelsim} {questa=C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.cache/compile_simlib/questa} {riviera=C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.cache/compile_simlib/riviera} {activehdl=C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_pattern_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module patternToSensors_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:184]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w32_1024_r256_128
+Compiling module xil_defaultlib.load_pattern_v0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
+Compiling module xil_defaultlib.patternToSensors_v0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w64_128_r32_256
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.805 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$finish called at time : 11560 ns : File "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" Line 137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1388.805 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/Top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 23 12:13:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:184]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$finish called at time : 11560 ns : File "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" Line 137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1388.805 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_pattern_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module patternToSensors_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:185]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w32_1024_r256_128
+Compiling module xil_defaultlib.load_pattern_v0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
+Compiling module xil_defaultlib.patternToSensors_v0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w64_128_r32_256
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2027.254 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+$finish called at time : 11560 ns : File "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" Line 138
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 2027.254 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_pattern_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module patternToSensors_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:185]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w32_1024_r256_128
+Compiling module xil_defaultlib.load_pattern_v0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
+Compiling module xil_defaultlib.patternToSensors_v0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_w64_128_r32_256
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2027.254 ; gain = 0.000
 INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-open_wave_config C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg
+open_wave_config C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/tb_behav.wcfg
 source tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -152,372 +600,15 @@ source tb.tcl
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1567.199 ; gain = 0.000
+$finish called at time : 11560 ns : File "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v" Line 138
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1567.199 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module load_pattern_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module patternToSensors_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb
-"xvhdl --incr --relax -prj tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2022.1
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v:184]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w32_1024_r256_128
-Compiling module xil_defaultlib.load_pattern_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
-Compiling module xil_defaultlib.patternToSensors_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w64_128_r32_256
-Compiling module xil_defaultlib.tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1567.199 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-open_wave_config C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg
-source tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000000ns
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 11560 ns : File "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" Line 137
-xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1567.199 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1567.199 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module load_pattern_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module patternToSensors_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb
-"xvhdl --incr --relax -prj tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2022.1
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v:184]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w32_1024_r256_128
-Compiling module xil_defaultlib.load_pattern_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
-Compiling module xil_defaultlib.patternToSensors_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w64_128_r32_256
-Compiling module xil_defaultlib.tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1567.199 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-open_wave_config C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg
-source tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000000ns
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 11560 ns : File "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" Line 137
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1567.199 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module load_pattern_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module patternToSensors_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb
-"xvhdl --incr --relax -prj tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2022.1
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v:184]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w32_1024_r256_128
-Compiling module xil_defaultlib.load_pattern_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
-Compiling module xil_defaultlib.patternToSensors_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w64_128_r32_256
-Compiling module xil_defaultlib.tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1567.199 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1567.199 ; gain = 0.000
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 11560 ns : File "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" Line 137
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1567.199 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module load_pattern_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module patternToSensors_v0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb
-"xvhdl --incr --relax -prj tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1567.199 ; gain = 0.000
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2022.1
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v:184]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w32_1024_r256_128
-Compiling module xil_defaultlib.load_pattern_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w256_1024_r64_4096_ib
-Compiling module xil_defaultlib.patternToSensors_v0
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_sync_stag...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_a...
-Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
-Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.fifo_w64_128_r32_256
-Compiling module xil_defaultlib.tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1567.199 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1567.199 ; gain = 0.000
-Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-$finish called at time : 11560 ns : File "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" Line 137
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1567.199 ; gain = 0.000
-save_wave_config {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 23 11:11:51 2023...
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2027.254 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp with file C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/Top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 23 12:39:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/runme.log

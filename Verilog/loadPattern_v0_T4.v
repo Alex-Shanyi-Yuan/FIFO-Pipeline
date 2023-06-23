@@ -133,8 +133,8 @@ module load_pattern_v0(
 				
         S_subc_pats : begin
 					
-					//if (cntPat < num_streams && camfifo_valid && (~FIFO_full)) begin
-					if (1) begin
+					if (cntPat < num_streams && camfifo_valid && (~FIFO_full)) begin
+					//if (1) begin
 						cntPat <= cntPat + 1;
 						FIFO_wr <= 1;
 						pat_fifo_rd_en <= 1;
