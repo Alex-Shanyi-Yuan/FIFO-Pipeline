@@ -133,7 +133,7 @@ module tb();
         #300
         rd_out_en = 1;
         
-        #1000000
+        #10000
         $finish;
     end
 

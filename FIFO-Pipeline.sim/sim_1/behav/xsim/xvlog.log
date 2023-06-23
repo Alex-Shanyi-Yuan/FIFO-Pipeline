@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/sim/fifo_w64_128_r32_256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w64_128_r32_256
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/sim/fifo_w256_1024_r64_4096_ib.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w256_1024_r64_4096_ib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/sim/fifo_w32_1024_r256_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_1024_r256_128
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_pattern_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module patternToSensors_v0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
