@@ -83,3 +83,5 @@ close_sim
 launch_simulation
 open_wave_config C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg
 source tb.tcl
+save_wave_config {C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/tb_behav.wcfg}
+close_sim

@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,196.835 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,416.429 ns"></ZoomEndTime>
-      <Cursor1Time time="1,400.100 ns"></Cursor1Time>
+      <ZoomStartTime time="841.645 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,087.432 ns"></ZoomEndTime>
+      <Cursor1Time time="1,016.384 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="137"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <NameColumnWidth column_width="343"></NameColumnWidth>
+      <ValueColumnWidth column_width="167"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="28" />
    <wvobject fp_name="/tb/okClk" type="logic">
@@ -35,6 +35,14 @@
    <wvobject fp_name="/tb/cache_data" type="array">
       <obj_property name="ElementShortName">cache_data[255:0]</obj_property>
       <obj_property name="ObjectShortName">cache_data[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache_rd_en" type="logic">
+      <obj_property name="ElementShortName">cache_rd_en</obj_property>
+      <obj_property name="ObjectShortName">cache_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/patt_out" type="array">
+      <obj_property name="ElementShortName">patt_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">patt_out[63:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pipe_in_wr_count" type="array">
       <obj_property name="ElementShortName">pipe_in_wr_count[9:0]</obj_property>
@@ -64,10 +72,6 @@
       <obj_property name="ElementShortName">pipe_out_wr_count[6:0]</obj_property>
       <obj_property name="ObjectShortName">pipe_out_wr_count[6:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/cache_rd_en" type="logic">
-      <obj_property name="ElementShortName">cache_rd_en</obj_property>
-      <obj_property name="ObjectShortName">cache_rd_en</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/rd_mid_en" type="logic">
       <obj_property name="ElementShortName">rd_mid_en</obj_property>
       <obj_property name="ObjectShortName">rd_mid_en</obj_property>
@@ -91,10 +95,6 @@
    <wvobject fp_name="/tb/write_enable" type="logic">
       <obj_property name="ElementShortName">write_enable</obj_property>
       <obj_property name="ObjectShortName">write_enable</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/patt_out" type="array">
-      <obj_property name="ElementShortName">patt_out[63:0]</obj_property>
-      <obj_property name="ObjectShortName">patt_out[63:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pipe_in_ready" type="logic">
       <obj_property name="ElementShortName">pipe_in_ready</obj_property>
