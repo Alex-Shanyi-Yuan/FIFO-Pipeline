@@ -18,31 +18,30 @@ if __name__ == '__main__':
 
     # not reset
     dev.wire_in(0x00, 0)
+    
+    # set wire on
+    dev.wire_in(0x01, 1)
 
     # prep input
-    for i in range(8):
-        a = list(range(i*32, (i+1)*32))
-        b = bytearray(a)
-        print("In: ", b)
-        dev.write(0x80, b)
+    a = [0x0,0x0,0x0,0xf,0xf,0xf,0xf,0xf,0x0,0x0,0x0,0xe,0xe,0xe,0xe,0xe,0x0,0x0,0x0,0xd,0xd,0xd,0xd,0xd,0x0,0x0,0x0,0xc,0xc,0xc,0xc,0xc]
+    b = bytearray(a)
+    print("In: ", b)
+    dev.write(0x80, b)
         
-        # wait
-        time.sleep(0.25)
+    # wait
+    time.sleep(0.25)
 
     # wait
     time.sleep(0.5)
 
-    
-    # set wire on
-    dev.wire_in(0x01, 1)
     # wait
-    time.sleep(0.1)
+    time.sleep(1)
     # set wire off
     dev.wire_in(0x01, 0)
     
 
     # get output
-    c = bytearray(256* 7)
+    c = bytearray(256* 10)
     dev.read(0xA0, c)
     print("length: ", len(c))
     print("output: ", c)

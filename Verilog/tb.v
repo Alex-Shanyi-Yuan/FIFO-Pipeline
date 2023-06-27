@@ -39,7 +39,7 @@ module tb();
         
         #20
         data_in = 32'h000ddddd;
-        rd_mid_en = 1;
+//        rd_mid_en = 1;
 
         #20
         data_in = 32'h000ccccc;

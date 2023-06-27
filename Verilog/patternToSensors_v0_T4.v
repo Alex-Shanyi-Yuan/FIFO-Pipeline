@@ -90,7 +90,7 @@ module patternToSensors_v0(
 				.rd_clk(stream_clk),
 				.din(DI_f1),
 				.wr_en(wr_en_f1),
-				.rd_en(stream_en_i),
+				.rd_en(valid_fifo),
 				.dout(DO_f1),
 				.full(full_f1),
         		.almost_full(almost_full_f1),
@@ -100,7 +100,7 @@ module patternToSensors_v0(
 
 	// 1 clk delay to sensor
 	always @(posedge stream_clk) begin
-		stream_en_o <= stream_en_i;
+		stream_en_o <= valid_fifo;
 	end 
     /*
 	genvar k;
