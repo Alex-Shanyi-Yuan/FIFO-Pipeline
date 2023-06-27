@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="620.847 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,643.934 ns"></ZoomEndTime>
-      <Cursor1Time time="910.000 ns"></Cursor1Time>
+      <ZoomStartTime time="1,196.835 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,416.429 ns"></ZoomEndTime>
+      <Cursor1Time time="1,400.100 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <NameColumnWidth column_width="137"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
+   <WVObjectSize size="28" />
    <wvobject fp_name="/tb/okClk" type="logic">
       <obj_property name="ElementShortName">okClk</obj_property>
       <obj_property name="ObjectShortName">okClk</obj_property>
@@ -59,6 +59,10 @@
    <wvobject fp_name="/tb/u_patternToSensors/controlLoading/cntPat" type="array">
       <obj_property name="ElementShortName">cntPat[31:0]</obj_property>
       <obj_property name="ObjectShortName">cntPat[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pipe_out_wr_count" type="array">
+      <obj_property name="ElementShortName">pipe_out_wr_count[6:0]</obj_property>
+      <obj_property name="ObjectShortName">pipe_out_wr_count[6:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/cache_rd_en" type="logic">
       <obj_property name="ElementShortName">cache_rd_en</obj_property>

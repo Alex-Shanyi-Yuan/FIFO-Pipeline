@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1'
+HD_PWD='C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

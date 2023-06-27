@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/Top.tcl"
+  variable script "C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.runs/synth_1/Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a75tfgg484-1
 
@@ -77,41 +78,42 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.cache/wt [current_project]
-set_property parent.project_path C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.cache/wt [current_project]
+set_property parent.project_path C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/benlu/AppData/Roaming/Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/alexy/AppData/Roaming/Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part opalkelly.com:xem7310-a75:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.cache/ip [current_project]
+set_property ip_output_repo c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okBTPipeIn.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okBTPipeOut.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okCoreHarness.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okLibrary.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/XEM7310-A75/okWireIn.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v
-  C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Top.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/loadPattern_v0_T4.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/XEM7310-A75/okBTPipeIn.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/XEM7310-A75/okBTPipeOut.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/XEM7310-A75/okCoreHarness.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/XEM7310-A75/okLibrary.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/XEM7310-A75/okWireIn.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/XEM7310-A75/okWireOut.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/patternToSensors_v0_T4.v
+  C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/Top.v
 }
-read_ip -quiet C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xci
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128_ooc.xdc]
+read_ip -quiet C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xci
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w32_1024_r256_128/fifo_w32_1024_r256_128_ooc.xdc]
 
-read_ip -quiet C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib.xci
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib_ooc.xdc]
+read_ip -quiet C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib.xci
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w256_1024_r64_4096_ib/fifo_w256_1024_r64_4096_ib_ooc.xdc]
 
-read_ip -quiet C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256.xci
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256_ooc.xdc]
+read_ip -quiet C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.srcs/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256.xci
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.gen/sources_1/ip/fifo_w64_128_r32_256/fifo_w64_128_r32_256_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -122,12 +124,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Verilog_constraint/xem7310.xdc
-set_property used_in_implementation false [get_files C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/Verilog_constraint/xem7310.xdc]
+read_xdc C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/Verilog_constraint/xem7310.xdc
+set_property used_in_implementation false [get_files C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/Verilog_constraint/xem7310.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/FIFO-Pipeline.srcs/utils_1/imports/synth_1/Top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

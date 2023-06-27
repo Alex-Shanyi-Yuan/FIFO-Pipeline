@@ -4,6 +4,6 @@ Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/benlu/Desktop/ISML/FIFO-Pipeline/Verilog/tb.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'rd_data_count' [C:/Users/alexy/Documents/ISML_Research_Summer_2023/FIFO-Pipeline/Verilog/tb.v:185]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
